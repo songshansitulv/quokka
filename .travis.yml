@@ -12,5 +12,6 @@ install:
 script: make test
 after_success:
   - coveralls
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
 notifications:
   slack: quokkaproject:pjF8y81mqwXxQRtf5sGz5zqr
